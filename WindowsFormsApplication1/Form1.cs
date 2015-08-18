@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class FirstForm : Form
     {
-        public Form1()
+        public FirstForm()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace WindowsFormsApplication1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBoxButtons mb;
+            mb = MessageBoxButtons.YesNoCancel;
+            MessageBox.Show("vs2015的桌面编程好像很简单的样子", "这是一个简单的测试", mb, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
         }
     }
 }
